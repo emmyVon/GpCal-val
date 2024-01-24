@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP CalCULATOR</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <nav>Welcome Andrew</nav>
+    <div class="info-head">
+        <div class="container info-container">
+    <div class="student-info">
+        <h2>Course of Study:<span>Zoology</span></h2>
+        <h2>Year:<span>2</span></h2>
+        <h2>CGPA:<span>4.23</span></h2>
+        <h2>Current Semester:<span>Second Semster</span></h2>
+    </div>
+    <div class="Grade-sys">
+        <p>A:<span>5 points</span></p>
+        <p>B:<span>4 points</span></p>
+        <p>C:<span>3 points</span></p>
+        <p>D:<span>2 points</span></p>
+        <p>E:<span>1 points</span></p>
+        <p>F:<span>0 points</span></p>
+    </div>
+    </div>
+    </div>
+    <div class="Target">
+        <p>Number of registered Course:<span id="nocourse">8</span></p>
+        <div class="courses" >
+            <table style="width: 90vw"class="course-table">
+                <tr>
+                    <td>nil</td>
+                    <td>0</td>
+                    <td>-</td>
+                </tr>
+            </table>  
+            <div class="personal-timetable">
+                <div class="reading"></div> 
+                <div class="classes"></div>
+            </div>
+            <button onclick="createTable()">Add TimeTable</button>
+            <button>Add TimeTable</button>
+        </div>
+        <input type="number" placeholder="number of registered courses" class="courseCount"/>
+       <input type="text" placeholder="Enter a course" class="course" onChange="CourseOnchange(event)"/>
+        <button type="submit" onclick="UpdateTable()">submit</button>
+    </div>
+
+    <script src="Index.js"></script>
+</body>
+</html>
